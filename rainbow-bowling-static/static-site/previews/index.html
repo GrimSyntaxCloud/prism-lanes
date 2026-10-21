@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Prism Lanes — Two ways to roll</title>
+    <style>
+      @font-face {
+        font-family: Barlow;
+        src: url("assets/BarlowCondensed-ExtraBold.ttf");
+      }
+      @font-face {
+        font-family: Bowlby;
+        src: url("assets/BowlbyOneSC-Regular.ttf");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 40px;
+        background: #e9e5db;
+        color: #20221e;
+        font: 15px/1.5 Arial;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 30px;
+        margin-bottom: 35px;
+      }
+      h1 {
+        font: 800 clamp(45px, 6vw, 85px)/0.95 Barlow;
+        margin: 15px 0;
+      }
+      header p {
+        font: 11px monospace;
+        letter-spacing: 1px;
+      }
+      header > a {
+        color: inherit;
+        font-size: 12px;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+      article {
+        padding: 35px;
+        min-height: 540px;
+        position: relative;
+        overflow: hidden;
+      }
+      h2 {
+        font: 800 clamp(60px, 7vw, 110px)/0.88 Barlow;
+        margin: 45px 0 25px;
+        position: relative;
+        z-index: 1;
+      }
+      .night {
+        background: radial-gradient(ellipse at 80% 100%, #6d36ae, #141017 70%);
+        color: #f9f4e7;
+      }
+      .night h2 span {
+        color: #dcff60;
+      }
+      .social {
+        background: #faf0d8;
+        color: #29372e;
+      }
+      .social h2 {
+        font: clamp(43px, 5vw, 75px)/1 Bowlby;
+      }
+      .social h2 span {
+        color: #d54230;
+      }
+      .social img {
+        position: absolute;
+        width: 68%;
+        right: -20%;
+        bottom: 5%;
+        opacity: 0.25;
+      }
+      article > p {
+        font: 11px monospace;
+        letter-spacing: 1px;
+      }
+      article > div {
+        position: relative;
+        max-width: 270px;
+      }
+      article a {
+        display: inline-block;
+        margin-top: 35px;
+        background: #dcff60;
+        color: #111;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        position: relative;
+        z-index: 2;
+      }
+      .social a {
+        background: #d54230;
+        color: #fff7e8;
+        box-shadow: 4px 4px 0 #29372e;
+      }
+      footer {
+        font-size: 12px;
+        max-width: 650px;
+        margin-top: 30px;
+      }
+      a:focus-visible {
+        outline: 3px solid #3256c7;
+        outline-offset: 5px;
+      }
+      @media (max-width: 700px) {
+        body {
+          padding: 22px;
+        }
+        header {
+          display: block;
+        }
+        main {
+          grid-template-columns: 1fr;
+        }
+        article {
+          min-height: 500px;
+        }
+        h2 {
+          font-size: 85px;
+        }
+        .social h2 {
+          font-size: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p>PRISM LANES / DESIGN EXPLORATIONS</p>
+        <h1>TWO WAYS TO ROLL.</h1>
+      </div>
+      <a href="../index.html">See the current site ↗</a>
+    </header>
+    <main>
+      <article class="night">
+        <p>01 / NEON. IMMERSIVE. AFTER HOURS.</p>
+        <h2>AFTER<br /><span>DARK.</span></h2>
+        <div>
+          A playable 3D bowling lane, electric color, and cosmic-night energy.
+        </div>
+        <a href="after-dark/index.html">Step inside After Dark ↗</a>
+      </article>
+      <article class="social">
+        <p>02 / WARM. PLAYFUL. A LITTLE RETRO.</p>
+        <img src="assets/bowling-club.svg" alt="" />
+        <h2>SUNDAY<br /><span>SOCIAL.</span></h2>
+        <div>
+          Vintage club lettering, original bowling illustrations, and a warm
+          neighborhood personality.
+        </div>
+        <a href="sunday-social/index.html">Meet Sunday Social ↗</a>
+      </article>
+    </main>
+    <footer>
+      Two complete homepage previews. Try the visit planner, expand the leagues,
+      and explore below the fold. All assets are free or original. The current
+      live homepage has not been replaced.
+    </footer>
+  </body>
+</html>

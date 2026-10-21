@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A fictional Prism Lanes bowling venue — After Dark design preview."
+    />
+    <meta name="robots" content="noindex" />
+    <title>Prism Lanes — After Dark</title>
+    <link rel="stylesheet" href="../assets/designs.css" />
+  </head>
+  <body>
+    <div class="study-bar">
+      <span>DESIGN STUDY 01 <b> / AFTER DARK</b></span
+      ><a href="../sunday-social/index.html"
+        >See Sunday Social <span aria-hidden="true">↗</span></a
+      ><button class="motion-toggle" aria-pressed="false">Pause motion</button>
+    </div>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#main" aria-label="Prism Lanes home"
+        ><svg viewBox="0 0 32 48" aria-hidden="true">
+          <path
+            d="M16 2C8 2 8 13 12 18c3 4-1 10-5 17-4 7-1 11 2 11h14c3 0 6-4 2-11-4-7-8-13-5-17C24 13 24 2 16 2Z"
+            fill="currentColor"
+          />
+          <path
+            d="M12 21h8M10 27h12"
+            stroke="var(--bg)"
+            stroke-width="3"
+          /></svg
+        ><span>PRISM<small>LANES & GOOD TIMES</small></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#bowling">The lanes</a><a href="#food">The fuel</a
+        ><a href="#leagues">Your people</a>
+      </nav>
+      <button class="button header-cta" data-plan>
+        Let’s roll <span>↗</span>
+      </button>
+    </header>
+    <main id="main">
+      <section class="night-hero">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="live-dot"></span> BOWLING. BUT MAKE IT A NIGHT OUT.
+          </p>
+          <h1>LET THE<br />GOOD TIMES<br /><span>ROLL.</span></h1>
+          <p class="hero-description">
+            A little friendly competition.<br />A lot of main-character energy.
+          </p>
+          <button class="button acid" data-plan>
+            Find your lane <span>↗</span>
+          </button>
+          <p class="hero-note">
+            GOOD COMPANY. LOUD COLORS. QUESTIONABLE SCORES.
+          </p>
+        </div>
+        <div
+          class="lane-stage"
+          role="img"
+          aria-label="A three-dimensional cosmic bowling lane with glowing rails, ten pins, and a purple bowling ball"
+        >
+          <div class="scene-fallback" aria-hidden="true">
+            ✦<span>STRIKE<br />AFTER DARK.</span>
+          </div>
+          <canvas id="lane-canvas" aria-hidden="true"></canvas>
+        </div>
+        <div class="lane-control">
+          <span class="eyebrow">LANE 01 / YOUR SHOT</span
+          ><button
+            id="roll-ball"
+            class="round-button"
+            aria-label="Roll the ball in the 3D bowling scene"
+          >
+            ↗</button
+          ><span id="roll-status" role="status">Go on. Roll one.</span>
+        </div>
+        <span class="hero-side" aria-hidden="true"
+          >TEN PINS. ONE GOOD NIGHT. — PRISM LANES</span
+        >
+        <div class="hero-bottom">
+          <span>SCROLL TO FIND YOUR NIGHT ↓</span
+          ><span>NO SKILLS REQUIRED. JUST SHOW UP.</span>
+        </div>
+      </section>
+      <div class="ticker" aria-hidden="true">
+        <div>
+          GOOD TIMES AHEAD ✦ BAD BOWLERS WELCOME ✦ GOOD TIMES AHEAD ✦ BAD
+          BOWLERS WELCOME ✦
+        </div>
+      </div>
+      <section id="bowling" class="night-bowling section-pad">
+        <div class="section-kicker">
+          <span>01 / LIGHTS DOWN. GAME ON.</span
+          ><span>THIS IS HOW WE ROLL ↙</span>
+        </div>
+        <div class="split-heading">
+          <h2>YOUR USUAL NIGHT.<br /><em>UNUSUALLY GOOD.</em></h2>
+          <p>
+            First-timers, strike-chasers, and “I’m just here for the vibes”
+            friends. There’s a lane with your name on it.
+          </p>
+        </div>
+        <div class="cosmic-poster">
+          <div class="poster-rays" aria-hidden="true"></div>
+          <div class="poster-copy">
+            <span class="pill">THU — SAT / 9PM — CLOSE</span>
+            <h3>AFTER<br /><span>DARK.</span></h3>
+            <p>
+              Black lights. Glowing lanes.<br />One more game turns into a whole
+              night.
+            </p>
+            <button class="button white" data-plan>
+              Explore cosmic bowling ↗
+            </button>
+          </div>
+          <div class="price-stamp">
+            <span>SHOES INCLUDED</span><strong>$12</strong
+            ><span>PER PERSON · SAMPLE PRICE</span>
+          </div>
+          <span class="poster-label">PRISM PRESENTS / COSMIC BOWLING</span>
+        </div>
+        <div class="rate-strip">
+          <p>KEEP IT CLASSIC <small>Sample per-game prices</small></p>
+          <p>WEEKDAYS <strong>$3.00</strong></p>
+          <p>WEEKENDS <strong>$3.50</strong></p>
+          <p>SHOE RENTAL <strong>$2.50</strong></p>
+        </div>
+      </section>
+      <section id="food" class="night-food section-pad">
+        <div class="food-art">
+          <img
+            src="../assets/pizza.svg"
+            alt="Original illustration of a pizza with pepperoni, basil, and melted cheese"
+            loading="lazy"
+          /><span class="orbit-label">ROLL. REFUEL. REPEAT.</span>
+        </div>
+        <div>
+          <p class="eyebrow">02 / BETWEEN THE FRAMES</p>
+          <h2>BIG ROLLS.<br /><span>BIGGER BITES.</span></h2>
+          <p>
+            Because the best score is a table full of your people. A shareable
+            pizza-and-snacks direction for the next version of Prism.
+          </p>
+          <span class="menu-note">SAMPLE FOOD CONCEPT · MENU TO COME</span>
+        </div>
+      </section>
+      <section id="leagues" class="night-leagues section-pad">
+        <p class="eyebrow">03 / YOUR WEEKLY PLOT TWIST</p>
+        <div class="split-heading">
+          <h2>FIND YOUR PEOPLE.<br /><em>THEN BEAT THEM.</em></h2>
+          <p>
+            A little rivalry. A regular night out. Meet the league concepts from
+            the original Prism project.
+          </p>
+        </div>
+        <div class="league-list">
+          <details>
+            <summary>
+              <span>01</span>
+              <h3>Mixed Mingle</h3>
+              <span class="league-tag">SOCIAL BOWLING</span><b>+</b>
+            </summary>
+            <p>
+              A social bowling league for meeting other players. Bring a friend
+              or find your next teammate. This preview does not accept
+              registrations.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span>02</span>
+              <h3>Happy Hour</h3>
+              <span class="league-tag">AFTER-WORK ENERGY</span><b>+</b>
+            </summary>
+            <p>
+              Close the laptop. Open a new frame. A relaxed after-work league
+              concept for making a regular night of it.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span>03</span>
+              <h3>Seniors After Dark</h3>
+              <span class="league-tag">EXPERIENCE WELCOME</span><b>+</b>
+            </summary>
+            <p>
+              A friendly league concept for experienced and returning bowlers.
+              Familiar faces, friendly competition, and another reason to get
+              together.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="night-finale">
+        <p class="eyebrow">YOUR GROUP CHAT FINALLY HAS A PLAN.</p>
+        <h2>LESS “WE SHOULD.”<br />MORE <span>“LET’S GO.”</span></h2>
+        <button class="button acid" data-plan>Make a night of it ↗</button>
+        <p class="fine-print">
+          Fictional venue & illustrative prices. No bookings or payments.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-brand">PRISM<span>LANES.</span></div>
+      <div class="footer-bottom">
+        <p>
+          A fictional venue. A very real love of bowling.<br />Design preview ·
+          Original coursework by Andres M. & Dan S.
+        </p>
+        <a href="../../index.html">Compare with the current site ↗</a
+        ><a href="../assets/credits.txt">Design & asset credits ↗</a>
+      </div>
+    </footer>
+    <dialog id="plan" aria-labelledby="plan-title">
+      <form method="dialog">
+        <button class="close-dialog" aria-label="Close visit planner">×</button>
+      </form>
+      <p class="eyebrow">MAKE A NIGHT OF IT</p>
+      <h2 id="plan-title">Your lane.<br />Your kind of night.</h2>
+      <p>
+        Try the sample visit planner. This fictional venue does not accept
+        reservations or payments.
+      </p>
+      <label for="visit-type">Pick your vibe</label
+      ><select id="visit-type">
+        <option value="cosmic">
+          Cosmic bowling · $12 / person, shoes included
+        </option>
+        <option value="weekday">
+          Weekday bowling · $3 / game + $2.50 shoes
+        </option>
+        <option value="weekend">
+          Weekend bowling · $3.50 / game + $2.50 shoes
+        </option></select
+      ><label for="players">Bring your people</label
+      ><select id="players">
+        <option value="2">2 players</option>
+        <option value="3">3 players</option>
+        <option value="4" selected>4 players</option>
+        <option value="5">5 players</option>
+        <option value="6">6 players</option>
+      </select>
+      <div class="estimate">
+        <span
+          >Sample total
+          <small id="estimate-detail">Cosmic bowling with shoes</small></span
+        ><output id="estimate" aria-live="polite">$48.00</output>
+      </div>
+      <p class="fine-print">
+        Illustrative coursework prices. One game per player for standard
+        bowling. Nothing is booked or saved.
+      </p>
+    </dialog>
+    <script type="module" src="../assets/interactions.js"></script>
+    <script type="module" src="../assets/lane.js"></script>
+  </body>
+</html>
