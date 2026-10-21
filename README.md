@@ -1,10 +1,25 @@
 # Prism Lanes
 
-Formerly Rainbow Bowling. A coursework concept for a fictional bowling venue, originally credited to Andres M. and Dan S. The repository preserves its WordPress theme experiments in `rainbow-bowling/` and `rainbow-bowling-static/`.
+[Live demo](https://grimsyntaxcloud.github.io/prism-lanes/)
 
-The public demo is `rainbow-bowling-static/static-site/`. The former scaffold had an unfinished homepage and four empty files. The refreshed version provides five responsive static pages using the original bowling, league, pricing, and location content. The food page explicitly identifies the missing original menu rather than inventing a real service. All business details and prices are fictional.
+A fictional bowling venue with an After Dark visual identity: neon colors, bold typography, and an interactive 3D bowling lane. Originally Rainbow Bowling, a coursework concept credited to Andres M. and Dan S. The original WordPress experiments remain in `rainbow-bowling/` and `rainbow-bowling-static/`.
 
-No WordPress, PHP host, database, contact submission, booking, payments, or third-party scripts are used by this static demo. The WordPress sources are not uploaded to GitHub Pages.
+## What visitors can do
+
+- Roll a strike in the browser-rendered bowling scene.
+- Explore cosmic bowling, illustrative prices, a proposed food concept, and the original league ideas.
+- Expand league descriptions and try the sample visit planner. Estimates include shoes and one game per player for standard bowling.
+- Pause motion; operating-system reduced-motion preferences are respected.
+
+This is a portfolio demo, not a real business. All venue details and prices are fictional. It takes no reservations, registrations, payments, or personal information. The food illustration is a design concept, not an established menu.
+
+## How it works
+
+The public homepage is `rainbow-bowling-static/static-site/index.html`. HTML and CSS provide the layout; vanilla JavaScript powers the accessible planner dialog and motion toggle. A locally bundled MIT-licensed Three.js module renders the bowling scene, with a graphic fallback when WebGL is unavailable. The scene stops its rendering loop when offscreen or paused.
+
+The fonts are locally hosted under the SIL Open Font License. Artwork is original SVG and procedural 3D. Asset licenses and credits are included in `static-site/assets/`. No external scripts, analytics, paid assets, accounts, API keys, backend, or database are required.
+
+The original `leagues.html`, `events.html`, `food.html`, and `contact-us.html` URLs forward to their corresponding homepage sections. The two design explorations remain in source under `previews/` and are excluded from the public build; see [design notes](DESIGN-PREVIEWS.md).
 
 ## Preview and validate
 
@@ -12,17 +27,11 @@ Use Python 3 (no package installation):
 
 ```sh
 python3 scripts/build.py
-python3 -m http.server 8080 --directory dist
+python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
 ```
 
-Open http://localhost:8080. The build packages only static public assets and checks local page links, fragments, images, scripts, and CSS resources. Relative paths work beneath a GitHub Pages repository URL.
+Open http://127.0.0.1:8080. The build packages only the public static site and checks local HTML/CSS links and resources. Relative asset paths support the GitHub Pages repository URL.
 
-## GitHub Pages
+## Free deployment
 
-Pull requests and pushes to `master` run validation. Publishing is available manually and on pushes to `master`:
-
-1. In repository **Settings → Pages**, select **GitHub Actions** as the source.
-2. In **Actions → Publish GitHub Pages**, run the workflow on `master`.
-3. Use the deployment URL returned by GitHub after it succeeds; then update the repository homepage and portfolio.
-
-This public repository can use free GitHub Pages. No Azure subscription, database allocation, or payment method is needed. Changes to `master` publish after validation. Live demo: https://grimsyntaxcloud.github.io/prism-lanes/
+GitHub Actions validates pull requests. Merging to `master` validates and deploys to the existing GitHub Pages site automatically; manual deployment is also available. The repository is public and uses free GitHub Pages. No Azure resources, database capacity, subscription changes, or payment service are involved.

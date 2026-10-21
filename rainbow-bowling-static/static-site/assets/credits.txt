@@ -1,0 +1,8 @@
+Prism Lanes — two original design studies
+
+Original venue coursework: Andres M. and Dan S.
+New layouts, SVG illustrations, CSS motion, and procedural 3D bowling scene: created for this design exploration with Codex.
+Three.js: MIT license, bundled locally. See LICENSE.
+Barlow Condensed and Bowlby One SC: Google Fonts, SIL Open Font License. See adjacent OFL files.
+No purchased assets, stock subscriptions, external runtime services, analytics, or booking backend.
+Food illustrations are proposed visual concepts, not an established venue menu. All business details and prices are fictional.
