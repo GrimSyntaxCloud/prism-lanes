@@ -1,7 +1,9 @@
 name: Publish GitHub Pages
-# Manual until the owner launches the prepared demo. No Azure or secrets required.
+# Free static hosting; no Azure or database credentials.
 on:
   workflow_dispatch:
+  push:
+    branches: [master]
 permissions:
   contents: read
   pages: write
