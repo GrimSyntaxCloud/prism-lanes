@@ -296,7 +296,7 @@ try {
     canvas.parentElement.classList.remove("scene-ready");
     button.disabled = true;
     status.textContent =
-      "3D paused. The rest of the preview is ready to explore.";
+      "3D paused. The rest of the site is ready to explore.";
     if (raf) cancelAnimationFrame(raf);
   });
   resize();

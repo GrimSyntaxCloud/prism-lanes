@@ -13,7 +13,7 @@ OUT.mkdir()
 for name in SOURCES:
     source = ROOT / name
     if source.is_dir():
-        shutil.copytree(source, OUT, dirs_exist_ok=True)
+        shutil.copytree(source, OUT, dirs_exist_ok=True, ignore=shutil.ignore_patterns("previews"))
     else:
         shutil.copy2(source, OUT / source.name)
 (OUT / '.nojekyll').touch()
