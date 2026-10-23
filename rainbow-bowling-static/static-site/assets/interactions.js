@@ -34,7 +34,8 @@ function estimate() {
 type.addEventListener("change", estimate);
 players.addEventListener("change", estimate);
 const motion = document.querySelector(".motion-toggle");
-let paused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+let paused = motionPreference.matches;
 function applyMotion() {
   document.body.classList.toggle("pause-motion", paused);
   motion.setAttribute("aria-pressed", String(paused));
@@ -48,3 +49,8 @@ motion.addEventListener("click", () => {
   applyMotion();
 });
 applyMotion();
+
+motionPreference.addEventListener("change", (event) => {
+  paused = event.matches;
+  applyMotion();
+});
